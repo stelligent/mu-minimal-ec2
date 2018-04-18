@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: ./hello.py
+    destination: /home/ec2-home/hello/
+  - source: ./etc/init/mu-minimal-ec2.conf 
+    destination: /etc/init/
+
+hooks:
+  BeforeInstall:
+    - location: codedeploy/remove_previous_install.sh
+      timeout: 30
+  ApplicationStop:
+    - location: codedeploy/stop_server.sh
+      timeout: 30
+  ApplicationStart:
+    - location: codedeploy/start_server.sh
+      timeout: 30
