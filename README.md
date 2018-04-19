@@ -7,7 +7,7 @@
 
 
 
-Learn how to deploy a webapp to AWS EC2 using mu. If you want to get into microservices, but aren't ready to take the container plunge, you can deploy mu projects directly to AWS EC2 instances.  Using mu's EC2 mode, you can leverage the benefits of microservices without containerization,  and speed up development feedback loops.
+Learn how to deploy a webapp to AWS EC2 using mu. If you want to get into microservices, but aren't ready to take the container plunge, you can deploy applications/services directly to AWS EC2 instances.  Using mu's EC2 mode, you can leverage the benefits of microservices without containerization,  and speed up development feedback loops.
 
 The web app in this article is the smallest possible Flask application. You can adapt this example to deploy other applications that include their own web servers, like Django, NodeJS with Express, Ruby with puma/thin/passenger, Jetty or even Spring Boot.
 
